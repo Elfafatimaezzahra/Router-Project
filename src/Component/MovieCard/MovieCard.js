@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
 import "./moviecard.css";
 
 export default function MovieCard({ele}) {
     return (
+        <Link to={'/'+ele.id}>
         <div className="MovieCard">
                 <div>
                     <div>
@@ -15,5 +17,6 @@ export default function MovieCard({ele}) {
                     </div>
                 </div>
             </div>
+        </Link>
     )
 }
